@@ -34,16 +34,17 @@ public class Main {
 
         System.out.println("Задание 3");
 
-        int year = 2021;
+        int year = 2024;
 
-        if (year > 1584) {
-            if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
-                System.out.println(year + " год является високосным.");
-            } else {
-                System.out.println(year + " год не является високосным.");
-            }
-        } else {
+        if (year <= 1584) {
             System.out.println("Год должен быть больше 1584.");
+            return;
+        }
+        boolean isLeapYear = (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0);
+        if (isLeapYear) {
+            System.out.println(year + " год является високосным.");
+        } else {
+            System.out.println(year + " год не является високосным.");
         }
 
         System.out.println("Задание 4");
