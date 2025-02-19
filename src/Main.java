@@ -45,6 +45,7 @@ public class Main {
             System.out.println(year + " год является високосным.");
         } else {
             System.out.println(year + " год не является високосным.");
+
         }
 
         System.out.println("Задание 4");
